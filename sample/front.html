@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            *, *:before, *:after {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            body {
+                /* width: 9.25in;
+                height: 6.25in; */
+                min-width: 9.25in;
+                min-height: 6.25in;
+                max-width: 9.25in;
+                max-height: 6.25in;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                /* background-color: aquamarine; */
+                /* If using an image, the background image should have dimensions of 2775x1875 pixels. */
+        
+            }
+            #bleed{
+                min-width: 9.25in;
+                min-height: 6.25in;
+                max-width: 9.25in;
+                max-height: 6.25in;
+                margin: 0;
+                padding: 0;
+                background-color: aquamarine;
+                padding: 0.1875in;
+            }
+            #safezone{
+                
+                background-color: darkorange;
+                min-height: 5.875in;
+                min-width: 8.875in;
+            }
+            #postcard{
+                padding: 0.1875in;
+                border: 1px solid black;
+                background-color: deepskyblue;
+                
+            }
+            @media print {
+                #bleed{
+                    width: 9.25in;
+                    height: 6.25in;
+                }
+            }
+        </style>
+        <!--
+            PDF, PNG, and JPGs must be sized at 4.25"x6.25", 6.25"x9.25", or 6.25"x11.25" at 300 DPI, 
+            while supplied HTML will be rendered to the specified size.
+        -->
+    </head>
+    <body>
+        <div id="bleed">
+            <div id="safezone">
+                <div id="postcard">
+                    <h1>Front Post Card</h1>
+                    
+                </div>
+                <div>
+                    ABCDEFGHIJKLMNOPQRSTUVWXYZ1ABCDEFGHIJKLMNOPQRSTUVWXYZ2ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                </div>
+                <h1>Hi {{firstname}}</h1>
+            </div>
+        </div>
+
+        
+                
+    </body>
+</html>
